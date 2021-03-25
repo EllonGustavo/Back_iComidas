@@ -1,0 +1,7 @@
+//Teste de requisição - categorias
+@baseERL=http://localhost:4001
+
+###
+//GET - lista as categorias
+GET {{baseERL}}/categorias
+Content-Type: application/json
