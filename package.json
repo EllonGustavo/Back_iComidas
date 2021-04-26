@@ -1,0 +1,14 @@
+{
+  "name": "vackend",
+  "version": "1.0.0",
+  "description": "backend em node.js integrado ao MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ellon Gustavo Vairoletto",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
