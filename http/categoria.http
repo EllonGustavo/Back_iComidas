@@ -1,0 +1,39 @@
+//teste de requisições RESR -Categorias
+
+@baseURL = http://localhost:4000
+@id=6090387d5e60e6021fb966b4
+
+//GET - lista todas as categorias
+GET {{baseURL}}/categorias
+Content-Type: application/json
+
+###
+//GET - Lista apenas uma categoria pelo id
+GET {{baseURL}}/categorias/{{id}}
+Content-Type: application/json
+
+###
+//POST - inclue uma nova categoria
+POST {{baseURL}}/categorias
+Content-Type: application/json
+
+{
+    "nome":"cantinas",
+    "status":"ativo"
+}
+
+###
+//DELETE - apaga uma categoria atraves do id informado
+DELETE  {{baseURL}}/categorias/{{id}}
+Content-Type: application/json
+
+###
+//PUT - altera uma categoria
+PUT {{baseURL}}/categorias/
+Content-Type: application/json
+
+{
+    "_id":"6090387d5e60e6021fb966b4",
+    "nome":"Cantinas anas",
+    "status":"ativo"
+}
